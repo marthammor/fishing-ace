@@ -1,5 +1,4 @@
-﻿local L = LibStub("AceLocale-3.0"):NewLocale("FishingAce", "koKR", false)
+﻿local L = LibStub("AceLocale-3.0"):NewLocale("FishingAce", "koKR")
 
-if L then
-@localization(locale="koKR", format="lua_additive_table", handle-unlocalized="english")@
-end
+if not L then return end
+--@localization(locale="koKR", format="lua_additive_table", handle-unlocalized="english")@
