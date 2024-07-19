@@ -1,8 +1,17 @@
-Versio 0.9.6:
+# Fishing Ace
+
+## Latest Version
+
+### 0.9.6
+
 - Remove unused registered events
 
-Version 0.9.5
+## Previous Versions
+
+### 0.9.5
+
 - First cut a Shadowlands version
 
-Version 0.9
+### 0.9
+
 - update fishing library
