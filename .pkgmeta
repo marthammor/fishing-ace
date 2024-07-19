@@ -36,3 +36,4 @@ externals:
 ignore:
      - .pkgmeta
      - .docmeta
+     - .gitignore
