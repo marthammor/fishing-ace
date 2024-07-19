@@ -380,14 +380,14 @@ function FishingAce:OnEnable()
 	self:RegisterEvent("GLOBAL_MOUSE_DOWN")
 
 	if ( FishingBuddy and FishingBuddy.Message ) then
-         FishingBuddy.Message(L["FishingAce is active, easy cast disabled."]);
+         FishingBuddy.Message(L["Active"]);
 	end
 end
 
 function FishingAce:OnDisable()
 	self:UnregisterAllEvents()
 	if ( FishingBuddy and FishingBuddy.Message ) then
-         FishingBuddy.Message(L["FishingAce on standby, easy cast enabled."])
+         FishingBuddy.Message(L["Standby"])
 	end
 end
 
