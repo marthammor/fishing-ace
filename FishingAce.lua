@@ -12,64 +12,6 @@ local ADDONNAME = "Fishing Ace!"
 local db;
 local FISHINGTEXTURE = "Interface\\Icons\\Trade_Fishing"
 
-local FISHINGLURES = {
-	[34861] = {
-		["n"] = "Sharpened Fish Hook", -- 100 for 10 minutes
-		["b"] = 100,
-		["s"] = 100,
-		["d"] = 10,
-	},
-	[6533] = {
-		["n"] = "Aquadynamic Fish Attractor", -- 100 for 10 minutes
-		["b"] = 100,
-		["s"] = 100,
-		["d"] = 10,
-	},
-	[46006] = {
-		["n"] = "Glow Worm", -- 100 for 60 minutes
-		["b"] = 100,
-		["s"] = 100,
-		["d"] = 60,
-	},
-	[33820] = {
-		["n"] = "Weather-Beaten Fishing Hat", -- 75 for 10 minutes
-		["b"] = 75,
-		["s"] = 1,
-		["d"] = 10,
-		["w"] = 1,
-	},
-	[7307] = {
-		["n"] = "Flesh Eating Worm", -- 75 for 10 mins
-		["b"] = 75,
-		["s"] = 100,
-		["d"] = 10,
-	},
-	[6532] = {
-		["n"] = "Bright Baubles", -- 75 for 10 mins
-		["b"] = 75,
-		["s"] = 100,
-		["d"] = 10,
-	},
-	[6811] = {
-		["n"] = "Aquadynamic Fish Lens", -- 50 for 10 mins
-		["b"] = 50,
-		["s"] = 50,
-		["d"] = 10,
-	},
-	[6530] = {
-		["n"] = "Nightcrawlers", -- 50 for 10 mins
-		["b"] = 50,
-		["s"] = 50,
-		["d"] = 10,
-	},
-	[6529] = {
-		["n"] = "Shiny Bauble", -- 25 for 10 mins
-		["b"] = 25,
-		["s"] = 1,
-		["d"] = 10,
-	},
-}
-
 local AddingLure = false
 
 local ButtonMap = {};
