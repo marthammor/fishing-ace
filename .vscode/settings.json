@@ -202,7 +202,8 @@
         "WOW_PROJECT_BURNING_CRUSADE_CLASSIC",
         "WOW_PROJECT_WRATH_CLASSIC",
         "WOW_PROJECT_CATACLYSM_CLASSIC",
-        "TradeSkillFrame"
+        "TradeSkillFrame",
+        "C_UnitAuras"
     ],
     "Lua.diagnostics.disable": [
         "inject-field"
