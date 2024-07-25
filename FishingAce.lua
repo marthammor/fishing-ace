@@ -141,14 +141,15 @@ FishingAce = LibStub("AceAddon-3.0"):NewAddon("FishingAce", "AceConsole-3.0", "A
 	"AceHook-3.0")
 
 local LastLure
-local casting_timer = null
+local casting_timer = nil
 function FishingAce:PostCastUpdate(self)
 	local stop = true
 	if (not InCombatLockdown()) then
 		if (AddingLure) then
-			local sp, sub, txt, tex, st, et, trade, int = UnitChannelInfo("player");
+			--local sp, sub, txt, tex, st, et, trade, int = UnitChannelInfo("player");
+			local name, _, _, _, _, _, _, _, _, _ = UnitChannelInfo("player");
 			local _, lure = FL:GetPoleBonus();
-			if (not sp or (lure and lure == LastLure.b)) then
+			if (not name or (lure and lure == LastLure.b)) then
 				AddingLure = false;
 				FL:UpdateLureInventory();
 			else
@@ -168,6 +169,7 @@ local function HideAwayAll(self, button, down)
 	end
 end
 
+AddonLoader = AddonLoader or {}
 function FishingAce:OnInitialize()
 	local defaults = {
 		profile = {
@@ -268,9 +270,9 @@ end
 local function StartFishingMode(self)
 	if (not self.startedFishing) then
 		-- Disable Click-to-Move if we're fishing
-		if (GetCVarBool("autointeract")) then
+		if (GetCVarBool("autoInteract")) then
 			self.resetClickToMove = true
-			SetCVar("autointeract", "0")
+			SetCVar("autoInteract", "0")
 		end
 		self.startedFishing = GetTime()
 		EnhanceFishingSounds(self, true)
@@ -285,7 +287,7 @@ local function StopFishingMode(self)
 	end
 	if (self.resetClickToMove) then
 		-- Re-enable Click-to-Move if we changed it
-		SetCVar("autointeract", "1")
+		SetCVar("autoInteract", "1")
 		self.resetClickToMove = nil
 	end
 end
@@ -314,6 +316,7 @@ local function SetupLure()
 	return false
 end
 
+FishingBuddy = FishingBuddy or {}
 function FishingAce:OnEnable()
 	self:RegisterEvent("PLAYER_ENTERING_WORLD")
 	self:RegisterEvent("PLAYER_LEAVING_WORLD")
