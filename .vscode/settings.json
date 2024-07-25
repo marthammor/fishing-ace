@@ -203,7 +203,10 @@
         "WOW_PROJECT_WRATH_CLASSIC",
         "WOW_PROJECT_CATACLYSM_CLASSIC",
         "TradeSkillFrame",
-        "C_UnitAuras"
+        "C_UnitAuras",
+        "BOOKTYPE_SPELL",
+        "C_Item",
+        "CANCELABLE"
     ],
     "Lua.diagnostics.disable": [
         "inject-field"
