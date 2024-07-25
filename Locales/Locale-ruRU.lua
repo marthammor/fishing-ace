@@ -1,5 +1,41 @@
-﻿local L = LibStub("AceLocale-3.0"):NewLocale("FishingAce", "ruRU", false)
+﻿local L = LibStub("AceLocale-3.0"):NewLocale("FishingAce", "ruRU")
 
-if L then
-@localization(locale="ruRU", format="lua_additive_table", handle-unlocalized="english")@
-end
+if not L then return end
+
+-- Translations provided by Google Translate.
+
+L["on"] = "на"
+L["off"] = "выключенный"
+
+L["Fishing Ace!"] = "Fishing Ace!"
+L["Description"] = "Fishing Ace! позволяет вам ловить рыбу двойным щелчком мыши всякий раз, когда обнаруживает, что вы используете удочку. Настройки для улучшения вашего опыта рыбалки можно установить ниже."
+
+L["Auto Loot"] = "Автоматический лут"
+L["AutoLootMsg"] = "Если установлено, Fishing Ace! включит автоматическую добычу во время рыбалки."
+
+L["Auto Lures"] = "Авто приманки"
+L["AutoLureMsg"] = "Если установлено, Fishing Ace! добавит приманку, когда она вам понадобится, вместо заброса."
+
+L["Enhance Sounds"] = "Улучшите звуки"
+L["EnhanceSoundsMsg"] = "Если установлено, Fishing Ace! улучшит окружающий звук во время рыбалки."
+
+L["Volume"] = "Объем"
+L["VolumeMsg"] = "Отрегулируйте громкость для использования во время рыбалки."
+
+L["Use Action"] = "Использовать действие"
+L["UseActionMsg"] = "Если установлено, Fishing Ace! найдет кнопку действия для применения."
+
+L["Casting Key"] = "Кастинговый ключ"
+L["CastingKeyMsg"] = "Установите клавишу-модификатор для принудительного заброса, даже если удочка не установлена."
+
+L["Mouse Button"] = "Кнопка мыши"
+L["MouseButtonMsg"] = "Выберите, какую кнопку мыши использовать для трансляции."
+
+L["Partial Gear"] = "Частичная передача"
+L["PartialGearMsg"] = "Если установлено, забрасывается, если имеется какая-либо рыболовная снасть."
+
+L["Watch Bobber"] = "Смотреть Боббер"
+L["WatchBobberMsg"] = "Если установлено, не забрасывайте приманку, если курсор находится над поплавком."
+
+L["Active"] = "FishingAce активен, легкий каст отключен."
+L["Standby"] = "FishingAce в режиме ожидания, легкий заброс включен."
