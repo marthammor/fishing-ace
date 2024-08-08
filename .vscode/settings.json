@@ -206,7 +206,10 @@
         "C_UnitAuras",
         "BOOKTYPE_SPELL",
         "C_Item",
-        "CANCELABLE"
+        "CANCELABLE",
+        "table",
+        "string",
+        "math"
     ],
     "Lua.diagnostics.disable": [
         "inject-field"

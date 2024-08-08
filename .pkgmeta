@@ -23,8 +23,8 @@ externals:
         url: https://repos.wowace.com/wow/ace3/trunk/AceConfig-3.0
     Libs/AceTimer-3.0:
         url: https://repos.wowace.com/wow/ace3/trunk/AceTimer-3.0
-    Libs/LibFishing-1.0:
-        url: https://github.com/marthammor/LibFishing-1.0.git
+    Modules/FishingCore:
+        url: https://github.com/marthammor/FishingCore.git
         type: git
         tag: v0.11-alpha
 

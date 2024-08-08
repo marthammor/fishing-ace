@@ -9,5 +9,5 @@
 	<Include file="Libs\AceDB-3.0\AceDB-3.0.xml" />
 	<Include file="Libs\AceHook-3.0\AceHook-3.0.xml" />
 	<Include file="Libs\AceLocale-3.0\AceLocale-3.0.xml" />
-	<Include file="Libs\LibFishing-1.0\LibFishing-1.0.xml" />
+	<Include file="Modules\FishingCore\FishingCore.xml" />
 </Ui>

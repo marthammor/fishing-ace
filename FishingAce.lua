@@ -5,7 +5,9 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 ]] --
 
 local L = LibStub("AceLocale-3.0"):GetLocale("FishingAce", true)
-local FL = LibStub("LibFishing-1.0")
+local FL = LibStub("FishingCore")
+
+local select, tonumber, pairs = select, tonumber, pairs
 
 local ADDONNAME = "Fishing Ace!"
 
@@ -207,8 +209,8 @@ end
 -- handle option keys for enabling casting
 local key_actions = {
 	["none"] = function(mouse) return mouse ~= "right"; end,
-	["shift"] = function(mouse) return IsShiftKeyDown(); end,
-	["control"] = function(mouse) return IsControlKeyDown(); end,
+	["shift"] = function(mouse) return mouse == IsShiftKeyDown(); end,
+	["control"] = function(mouse) return mouse == IsControlKeyDown(); end,
 }
 local function CastingKeys()
 	local setting = db.castingkey;
