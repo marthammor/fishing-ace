@@ -209,9 +209,17 @@
         "CANCELABLE",
         "table",
         "string",
-        "math"
+        "math",
+        "unpack",
+        "getmetatable",
+        "setmetatable",
+        "select",
+        "tonumber",
+        "pairs",
+        "tostring",
+        "ipairs",
+        "type",
+        "next"
     ],
-    "Lua.diagnostics.disable": [
-        "inject-field"
-    ]
+    "Lua.runtime.version": "Lua 5.1"
 }
