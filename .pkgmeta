@@ -26,7 +26,6 @@ externals:
     Modules/FishingCore:
         url: https://github.com/marthammor/FishingCore.git
         type: git
-        tag: v0.11-alpha
 
 ignore:
      - .pkgmeta

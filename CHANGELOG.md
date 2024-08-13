@@ -4,9 +4,10 @@
 
 ### 0.11-alpha
 
+- Toc updated to 11.0.2
 - Updates for The War Within expansion
 - Updated libraries
-- LibFishing-1.0 is now a stand alone library for separate developlment.
+- LibFishing-1.0 is now a stand alone module for separate developlment, FishingCore.
 
 ## Previous Versions
 
