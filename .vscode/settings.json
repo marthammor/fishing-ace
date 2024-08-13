@@ -219,7 +219,8 @@
         "tostring",
         "ipairs",
         "type",
-        "next"
+        "next",
+        "print"
     ],
     "Lua.runtime.version": "Lua 5.1"
 }
