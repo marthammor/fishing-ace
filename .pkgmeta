@@ -3,6 +3,14 @@ package-as: FishingAce
 externals:
     Libs/LibStub:
         url: https://repos.wowace.com/wow/libstub/trunk
+    Libs/CallbackHandler-1.0:
+        url: https://repos.curseforge.com/wow/callbackhandler/trunk
+    Libs/LibBabble-SubZone-3.0:
+        url: https://repos.wowace.com/wow/libbabble-subzone-3-0/trunk
+    Libs/LibTourist-3.0:
+        url: https://repos.wowace.com/wow/libtourist-3-0/trunk
+    Libs/HereBeDragons-2.0:
+        url: https://repos.curseforge.com/wow/herebedragons
     Libs/AceAddon-3.0:
         url: https://repos.wowace.com/wow/ace3/trunk/AceAddon-3.0
     Libs/AceConsole-3.0:
@@ -23,9 +31,6 @@ externals:
         url: https://repos.wowace.com/wow/ace3/trunk/AceConfig-3.0
     Libs/AceTimer-3.0:
         url: https://repos.wowace.com/wow/ace3/trunk/AceTimer-3.0
-    Modules/FishingCore:
-        url: https://github.com/marthammor/FishingCore.git
-        type: git
 
 ignore:
      - .pkgmeta

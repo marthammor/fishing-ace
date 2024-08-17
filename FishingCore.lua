@@ -1,0 +1,1 @@
+/wow_addons/FishingCore/FishingCore.lua
